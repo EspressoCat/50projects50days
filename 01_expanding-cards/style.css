@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    color: rgba(245, 245, 245, 1);
+    margin: 20px 0 0 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: rgba(245, 245, 245, 0.8);
+    margin: 5px 0 0 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(245, 245, 220, 1);;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 1em;
+    cursor: pointer;
+    margin: 1em;
+    flex: .5;
+    position: relative;
+    transition: flex 700ms ease-in;
+    box-shadow: 5px 30px 30px 0px rgba(0,0,0,.2);
+}
+
+.text-wrap {
+    position: absolute;
+    bottom: 20px;
+    padding: 0 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.card.active {
+    flex: 2.5;
+}
+
+.card.active .text-wrap {
+    opacity: 1;
+    transition: opacity 300ms ease-in 400ms;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .card.active {
+        flex: 5;
+    }
+    .card:nth-of-type(5), .card:nth-of-type(6), .card:nth-of-type(7), .card:nth-of-type(8), .card:nth-of-type(9) {
+        display: none;
+    }
+}
