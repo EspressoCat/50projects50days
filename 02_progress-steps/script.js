@@ -1,14 +1,14 @@
 const progress = document.getElementById('progress')
 const back = document.getElementById('back')
 const next = document.getElementById('next')
-const circles = document.querySelectorAll('.circle')
+const wraps = document.querySelectorAll('.text-wrap')
 
 let currentActive = 1
 
 next.addEventListener('click', () => {
     currentActive++
-    if(currentActive > circles.length) {
-        currentActive = circles.length
+    if(currentActive > wraps.length) {
+        currentActive = wraps.length
     }
 
     update()
@@ -24,20 +24,20 @@ back.addEventListener('click', () => {
 })
 
 function update() {
-    circles.forEach((circle, index) => {
+    wraps.forEach((wrap, index) => {
         if(index < currentActive) {
-            circle.classList.add('active')
+            wrap.classList.add('active')
         } else {
-            circle.classList.remove('active')
+            wrap.classList.remove('active')
         }
     })
 
     const actives = document.querySelectorAll('.active')
-    progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
+    progress.style.width = (actives.length - 1) / (wraps.length - 1)* 80 + '%'
 
     if(currentActive === 1) {
         back.disabled = true
-    } else if(currentActive === circles.length) {
+    } else if(currentActive === wraps.length) {
         next.disabled = true
     } else {
         back.disabled = false
