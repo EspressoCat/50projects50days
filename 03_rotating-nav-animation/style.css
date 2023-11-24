@@ -2,10 +2,10 @@
 
 :root {
     --circle-nav:  rgb(127 91 243 / 1);
-    --circle: rgb(91 243 127 / 1);
+    --circle-bg: rgb(91 243 127 / 1);
     --font-color-back:   rgb(255 255 0 / 1);
     --font-color-front:  rgb(74 54 50 / 1);
-    --bg-color-front:  rgb(255 255 250 / 1);
+    --bg-color-front:  rgb(255 242 229 / 1);
     --bg-color-nav: rgb(30 30 30 / 1);
 }
 
@@ -93,17 +93,16 @@ body {
 .background-circle-container{
     position: absolute;
     top: 30px;
-    right: -100px;
+    right: 0px;
     z-index: -100;
 } 
 
 .background-circle {
-    background-color: var(--circle);
+    background-color: var(--circle-bg);
     height: 300px;
-    width: 300px;
-    border-radius: 50%;
+    width: 150px;
+    border-radius: 150px 0 0 150px;
     position: relative;
-    overflow: hidden;
 }
 
 /* 3. nav */
