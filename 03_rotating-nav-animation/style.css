@@ -103,6 +103,7 @@ body {
     width: 300px;
     border-radius: 50%;
     position: relative;
+    overflow: hidden;
 }
 
 /* 3. nav */
