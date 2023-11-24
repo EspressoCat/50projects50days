@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>03 - Rotating Navigation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="background-circle-container">
+            <div class="background-circle"></div>
+        </div>
+        <div class="content">
+            <h1>The circle od life</h1>
+            <small>Espresso Cat</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti alias iure ab eligendi? Nulla dolorum odio nostrum dolorem sint harum deserunt consectetur inventore dolor iste eaque, libero tenetur ab iure facilis aliquam incidunt maiores ipsum quas perspiciatis enim architecto! Quisquam culpa vero dignissimos perspiciatis consequuntur ex consectetur distinctio odit, maiores mollitia unde officiis id cum iusto earum ipsa, dolorem natus repudiandae eius labore odio porro minus excepturi. Blanditiis alias cumque, ad quibusdam rerum iure quis tempore, minus suscipit expedita possimus, aliquid omnis eos libero earum. Dolorem quis atque nesciunt provident consectetur, minus, facilis, nobis cumque iure possimus pariatur ad!</p>
+
+            <h3>The image</h3>
+
+            <img src="https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="background pattern" srcset="https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1032w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1332w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1632w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1932w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2064w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2232w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2532w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2664w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2832w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3132w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3264w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3432w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3732w, https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3840w" sizes="(max-width: 3840px) 100vw, 3840px">
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero excepturi neque eum, labore nostrum nulla veritatis sunt! Repellendus tempore ipsum nemo tempora quas optio asperiores facilis beatae dignissimos excepturi in ipsa quam, quasi fuga vitae impedit perferendis. Iure voluptatem quia blanditiis asperiores! Temporibus deleniti earum, facere consectetur mollitia magni adipisci ipsam numquam. Ut ullam saepe deleniti, veritatis sequi illo ex, obcaecati placeat quis sunt tenetur voluptates ab. Unde quibusdam soluta dignissimos autem quidem possimus?</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user-alt"></i> About</li>
+            <li><i class="fas fa-envelope"></i> Contact</li>
+        </ul>
+    </nav>
+    <script src="./script.js"></script>
+</body>
+</html>

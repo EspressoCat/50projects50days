@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --circle-nav:  rgb(127 91 243 / 1);
+    --circle: rgb(91 243 127 / 1);
+    --font-color-back:   rgb(255 255 0 / 1);
+    --font-color-front:  rgb(74 54 50 / 1);
+    --bg-color-front:  rgb(255 255 250 / 1);
+    --bg-color-nav: rgb(30 30 30 / 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--bg-color-nav);
+    color: var(--text-front);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* 1. container */
+
+.container {
+    background-color: var(--bg-color-front);
+    transform-origin: top left;
+    transition: transform 500ms linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    filter: drop-shadow(0 0 75px var(--circle-nav));
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+.container.show-nav + nav li {
+    transform:translateX(0);
+    transition-delay: 300ms;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
+
+/* 2. circle */
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: var(--circle-nav);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 500ms linear;
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+
+.background-circle-container{
+    position: absolute;
+    top: 30px;
+    right: -100px;
+    z-index: -100;
+} 
+
+.background-circle {
+    background-color: var(--circle);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* 3. nav */
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    font-weight:lighter;
+    color: var(--font-color-back);
+    text-shadow: 0 0 5px var(--font-color-back);
+    margin: 20px 0;
+    transform: translateX(-150%);
+    transition: transform 400ms ease-in;
+}
+
+/* 4. content */
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content img {
+    border-radius: 20px;
+    max-width: 100%;
+    aspect-ratio: 3840 / 2160;
+}
+   
+.content h1 {
+    margin: 0;
+}
+
+.content small {
+    color: #555;
+    font-style: italic;
+}
+
+.content p {
+    color: #333;
+    line-height: 2;
+    padding-bottom: 25px;
+}
+
