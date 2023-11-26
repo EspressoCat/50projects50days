@@ -26,12 +26,13 @@ body {
     background-color: rgb(255 255 255 / 1);
     border: 0;
     color: rgb(0 0 0 / 0);
-    border-radius: 50px;
+    border-radius: 65px;
     font-size: 18px;
     padding: 15px;
     height: 65px;
     width: 65px;
-    transition-property: width, color, border-radius;
+    box-shadow:none;
+    transition-property: width, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
 }
@@ -47,7 +48,7 @@ body {
     font-size: 24px;
     height: 65px;
     width: 65px;
-    transition-property: transform, border-radius;
+    transition-property: transform, background-color;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
 }
@@ -59,10 +60,10 @@ body {
 .search.active .input {
     width: 260px;
     color: rgb(0 0 0 / 1);
-    border-radius: 65px 0 0 65px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.6);
 }
 
 .search.active .btn {
-    transform:translateX(260px);
-    border-radius: 0 65px 65px 0;
+    transform:translateX(195px);
+    background-color: rgb(255 255 255 / 0);
 }
