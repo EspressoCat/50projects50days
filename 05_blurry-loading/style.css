@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --white: oklch(100% 0 0);
+    --primary: oklch(17.66% 0.029 90.94);
+    --primaryDark: oklch(80.18% 0.029 90.94);
+    --beigeLight-1: oklch(93.77% 0.012 101.48);
+    --beigeLight-2: oklch(85.86% 0.033 114.69);
+    --beigeLight-3: oklch(83.4% 0.041 114.2);
+    --beigeDark: oklch(73.91% 0.056 111.98);
+    --shadow: .3rem .3rem .6rem var(--beigeLight-2),
+             -.2rem -.2rem .5rem var(--white);
+    --inner-shadow: inset .2rem .2rem .5rem var(--beigeLight-2),
+                    inset -.2rem -.2rem .5rem var(--white);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    height: 100svh;
+    width: 100vw;
+}
+
+.bg {
+    background: url('https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    height: calc(100vh + 80px);
+    height: calc(100svh + 80px);
+    width: calc(100vw + 80px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: var(--white);
+}
