@@ -2,16 +2,6 @@
 
 :root {
     --white: oklch(100% 0 0);
-    --primary: oklch(17.66% 0.029 90.94);
-    --primaryDark: oklch(80.18% 0.029 90.94);
-    --beigeLight-1: oklch(93.77% 0.012 101.48);
-    --beigeLight-2: oklch(85.86% 0.033 114.69);
-    --beigeLight-3: oklch(83.4% 0.041 114.2);
-    --beigeDark: oklch(73.91% 0.056 111.98);
-    --shadow: .3rem .3rem .6rem var(--beigeLight-2),
-             -.2rem -.2rem .5rem var(--white);
-    --inner-shadow: inset .2rem .2rem .5rem var(--beigeLight-2),
-                    inset -.2rem -.2rem .5rem var(--white);
 }
 
 * {
