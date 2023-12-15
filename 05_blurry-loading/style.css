@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --white: oklch(100% 0 0);
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@ body {
 }
 
 .bg {
-    background: url('https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1598842377738-7aa01579d317?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     position: absolute;
     top: -40px;
     left: -40px;
@@ -37,8 +37,20 @@ body {
     color: var(--white);
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 440px) {
     .bg {
-        background: url('https://images.unsplash.com/photo-1660245094600-c45a01fcc8e3?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        background: url('https://images.unsplash.com/photo-1598842377738-7aa01579d317?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 740px) {
+    .bg {
+        background: url('https://images.unsplash.com/photo-1598842377738-7aa01579d317?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    }
+}
+
+@media screen and (min-width: 741px) and (max-width: 1180px) {
+    .bg {
+        background: url('https://images.unsplash.com/photo-1598842377738-7aa01579d317?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     }
 }
