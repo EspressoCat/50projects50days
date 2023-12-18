@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
 
+:root {
+    font-size: 100%;
+    --white: oklch(100% 0 0);
+    --greyLight-1:  oklch(93.77% 0.015 257.2);
+    --greyLight-2:  oklch(85.86% 0.033 270.41);
+
+    --background: var(--greyLight-1);
+
+    --surface: var(--greyLight-1);
+    --onSurface: var(--white);
+
+    --shadow: .3rem .3rem .6rem var(--greyLight-2),
+             -.2rem -.2rem .5rem var(--white);
+}
+
 * {
     box-sizing: border-box;
 }
 
 h3 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.4em;
-    color: rgba(245, 245, 245, 1);
+    font-size: 1.4rem;
+    color: var(--onSurface);
     margin: 0;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: .9em;
-    line-height: 1.4em;
-    color: rgba(245, 245, 245, 0.8);
-    margin: 5px 0 0 0;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    color: var(--onSurface);
+    margin: .4rem 0 0 0;
 }
 
 body {
@@ -25,7 +40,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    background: rgba(245, 245, 220, 1);
+    background: var(--background);
 }
 
 .container {
@@ -38,19 +53,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    border-radius: 1em;
+    border-radius: 1rem;
     cursor: pointer;
-    margin: 1em;
+    margin: 1rem;
     flex: 1;
     position: relative;
     transition: flex 700ms ease-in;
-    box-shadow: 2px 30px 30px 0px rgba(0,0,0,.1);
+    box-shadow: var(--shadow);
 }
 
 .text-wrap {
     position: absolute;
-    bottom: 20px;
-    padding: 0 20px;
+    bottom: 1.25rem;
+    padding: 0 1.25rem;
     margin: 0;
     opacity: 0;
 }
