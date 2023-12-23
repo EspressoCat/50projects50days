@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --line-border-fill:  rgba(128, 63, 166, 1);
-    --line-border-empty: rgba(205, 205, 180, 1);
-    --text-empty:        rgba(175, 175, 150, 1);
-    --text-fill:         rgba(74, 54, 50, 1);
-    --background-color:  rgba(245, 245, 220, 1);
+    font-size: 100%;
+    --line-border-fill:  rgb(138 43 226 / 1);
+    --line-border-empty: rgb(205 205 180 / 1);
+    --text-empty:        rgb(175 175 150 / 1);
+    --text-fill:         rgb(74 54 50 / 1);
+    --background-color:  rgb(245 245 220 / 1);
 } 
 
 * {
@@ -31,19 +32,19 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     max-width: 100%;
-    width: 350px;
+    width: 22rem;
 }
 
 .progress-container::before {
     content:'';
     background-color: var(--line-border-empty);
     position: absolute;
-    top: 18px;
-    left: 20px;
+    top: 1.125rem;
+    left: 1.25rem;
     transform: translateY(-50%);
-    height: 4px;
+    height: .25rem;
     width: 80%;
     z-index: -1;
 }
@@ -51,10 +52,10 @@ body {
 .progress {
     background-color: var(--line-border-fill);
     position: absolute;
-    top: 18px;
-    left: 20px;
+    top: 1.125rem;
+    left: 1.25rem;
     transform: translateY(-50%);
-    height: 4px;
+    height: .25rem;
     max-width: 80%;
     width: 0%;
     z-index: -1;
@@ -64,12 +65,12 @@ body {
 .text-wrap {
     display: inline-block;
     text-align: center;
-    width: 75px;
+    width: 4.6rem;
 }
 
 .text-wrap p {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--text-empty);
 }
 
@@ -81,14 +82,14 @@ body {
 
 .circle {
     background-color: var(--background-color);
-    border: 3px solid var(--line-border-empty);
+    border: .25rem solid var(--line-border-empty);
     color: var(--text-empty);
     font-weight: 700;
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    height: 2.2rem;
+    width: 2.2rem;
     position: relative; /* Position the child element */
-    left: 20px; 
+    left: 1.25rem; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,12 +105,12 @@ body {
     background-color: var(--line-border-fill);
     color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: .3rem;
     cursor: pointer;
     font-family: inherit;
-    padding: 10px 30px;
-    margin: 5px;
-    font-size: 14px;
+    padding: .6rem 1.8rem;
+    margin: .3rem;
+    font-size: 1rem;
 }
 
 .btn:active {

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 :root {
+    font-size: 100%;
     --circle-nav:  rgb(127 91 243 / 1);
     --circle-bg: rgb(91 243 127 / 1);
     --font-color-back:   rgb(255 255 0 / 1);
@@ -29,8 +30,8 @@ body {
     transition: transform 500ms linear;
     width: 100vw;
     min-height: 100vh;
-    padding: 50px;
-    filter: drop-shadow(0 0 60px var(--circle-nav));
+    padding: 3.2rem;
+    filter: drop-shadow(0 0 3rem var(--circle-nav));
 }
 
 .container.show-nav {
@@ -50,14 +51,14 @@ body {
 
 .circle-container {
     position: fixed;
-    top: -100px;
-    left: -100px;
+    top: -7rem;
+    left: -7rem;
 }
 
 .circle {
     background-color: var(--circle-nav);
-    height: 200px;
-    width: 200px;
+    height: 14rem;
+    width: 14rem;
     border-radius: 50%;
     position: relative;
     transition: transform 500ms linear;
@@ -68,10 +69,10 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 100px;
+    height: 7rem;
     background: transparent;
     border: 0;
-    font-size: 26px;
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -92,16 +93,16 @@ body {
 
 .background-circle-container{
     position: absolute;
-    top: 30px;
-    right: 0px;
+    top: 1.8rem;
+    right: 0rem;
     z-index: -100;
 } 
 
 .background-circle {
     background-color: var(--circle-bg);
-    height: 300px;
-    width: 150px;
-    border-radius: 150px 0 0 150px;
+    height: 18rem;
+    width: 9rem;
+    border-radius: 9rem 0 0 9rem;
     position: relative;
 }
 
@@ -109,45 +110,45 @@ body {
 
 nav {
     position: fixed;
-    bottom: 0px;
-    left: 0;
+    bottom: 0rem;
+    left: 0rem;
     z-index: 100;
 }
 
 nav ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 nav ul li {
     font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
     font-weight:lighter;
     color: var(--font-color-back);
-    text-shadow: 0 0 5px var(--font-color-back);
-    margin: 20px 0;
+    text-shadow: 0 0 .3rem var(--font-color-back);
+    margin: 1.25rem 0;
     transform: translateX(-150%);
     transition: transform 400ms ease-in;
 }
 
 nav ul li .code-outer {
     color:rgb(100 100 0 / 0.1);
-    text-shadow: 0 0 5px rgb(100 100 0 / 0.1);
+    text-shadow: 0 0 .3rem rgb(100 100 0 / 0.1);
 }
 
 nav ul li .code-inner {
     color:rgb(100 100 0 / 0.2);
-    text-shadow: 0 0 5px rgb(100 100 0 / 0.2);
+    text-shadow: 0 0 .3rem rgb(100 100 0 / 0.2);
 }
 
 /* 4. content */
 
 .content {
-    max-width: 1000px;
-    margin: 50px auto;
+    max-width: 62rem;
+    margin: 4rem auto;
 }
 
 .content img {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     max-width: 100%;
     aspect-ratio: 3840 / 2160;
 }
@@ -164,7 +165,7 @@ nav ul li .code-inner {
 .content p {
     color: #333;
     line-height: 2;
-    padding-bottom: 25px;
+    padding-bottom: 1.5rem;
 }
 
 
