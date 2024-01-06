@@ -2,12 +2,12 @@
 
 :root {
     font-size: 100%;
-    --left-surface: rgb(245 245 245);
-    --left-onSurface:rgb(17 17 17);
-    --left-hover: rgb(17 17 17);
-    --right-surface: rgb(17 17 17);
-    --right-onSurface: rgb(245 245 245);
-    --right-hover: rgb(245 245 245);
+    --left-surface: oklch(97.02% 0 0);
+    --left-onSurface:oklch(17.76% 0 0);
+    --left-hover: oklch(17.76% 0 0);
+    --right-surface: oklch(17.76% 0 0);
+    --right-onSurface: oklch(97.02% 0 0);
+    --right-hover: oklch(97.02% 0 0);
     --hover-width:70%;
     --other-width:30%;
     --speed: 1000ms;
