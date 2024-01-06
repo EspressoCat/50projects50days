@@ -13,3 +13,4 @@ Projects are based on the [50 Projects 50 Days](https://50projects50days.com) co
 | 05  | [Blurry Loading](../main/05_blurry-loading)                        | [Live Demo](https://espresso.cat/projects/50projects50days/05/) |
 | 06  | [Scroll Animation](../main/06_scroll-animation)                    | [Live Demo](https://espresso.cat/projects/50projects50days/06/) |
 | 07  | [Split Landing Page](../main/07_split-landing-page)                | [Live Demo](https://espresso.cat/projects/50projects50days/07/) |
+| 08  | [Form Wave](../main/08_form-input-wave)                            | [Live Demo](https://espresso.cat/projects/50projects50days/08/) |
