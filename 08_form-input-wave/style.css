@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    font-size: 100%;
+    /* font-size: 62.5%; - 1rem now equals 10px */
+    --white: oklch(100% 0 0);
+    --primary-light: oklch(78.81% 0.109 255.212);
+    --primary: oklch(58.63% 0.227 281.34);
+    --primary-dark: oklch(47.56% 0.273 284.25);
+
+    --greyLight-1:  oklch(93.77% 0.015 257.2);
+    --greyLight-2:  oklch(85.86% 0.033 270.41);
+    --greyLight-3:  oklch(83.4% 0.041 269.92);
+    --greyDark:     oklch(73.91% 0.056 267.7);
+
+    --background: var(--greyLight-1);
+    --onBackground: var(--greyDark);
+
+    --surface: var(--primary);
+    --onSurface: var(--white);
+    --onSurface-Light: var(--greyDark);
+    --onSurface-Dark: oklch(58.2% 0.228 266.74);
+
+    --shadow: .3rem .3rem .6rem var(--greyLight-2),
+             -.2rem -.2rem .5rem var(--white);
+    --inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
+                    inset -.2rem -.2rem .5rem var(--white);
+    --radial-gradient: radial-gradient(ellipse at center, var(--white) 0%, var(--greyLight-1) 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--background);
+    color: var(--onBackground);
+    padding: 1.25rem 2.5rem;
+    border-radius: .4rem;
+    box-shadow: var(--shadow);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--onSurface-Dark);
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: var(--surface);
+    padding: .9rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 0;
+    border-radius: .4rem;
+    box-shadow:inset .2rem .2rem 1rem var(--primary-light), 
+              inset -.2rem -.2rem 1rem var(--primary-dark),
+              var(--shadow);
+    color: var(--greyLight-1);
+    transition: color 200ms ease-in;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover{
+    color: var(--onSurface);
+}
+
+.btn:active {
+    box-shadow:inset .2rem .2rem 1rem var(--primary-dark), 
+             inset -.2rem -.2rem 1rem var(--primary-light);
+    color: var(--onSurface);
+}
+
+.text {
+    margin-top: 1.875rem;
+}
+
+.form-control {
+    position: relative;
+    margin: 1.25rem 0 2.5rem 0;
+    width: 18.75rem;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: .125rem var(--onBackground) solid;
+    display: block;
+    width: 100%;
+    padding: .9rem;
+    font-size: 1.125rem;
+    color: var(--onBackground);
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: var(--greyLight-3);
+}
+
+.form-control label {
+    position: absolute;
+    top: .9rem;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 1.125rem;
+    min-width: .3rem;
+    transition: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: var(--greyLight-3);
+    transform: translateY(-1.875rem);
+}
+
+@media screen and (max-width: 440px) {
+    /* Media queries declarations do not base themselves on the declared font-size that you apply to html and instead always use the default size - which as I said is 16px in pretty much all browsers. */
+
+    /* NOTE: This is only for the declaration of the media query breakpoint, if you assign something to be 1rem tall inside the media query, then it will base itself on the base html size. */
+
+    /* 1px = 0.0625rem
+    so here 27.5rem comes out as 440px = 16px * 27.5 */
+}
+
+@media screen and (min-width: 441px) and (max-width: 740px) {
+
+    /* Here 27.5625rem comes out as 441px = 16px * 27.5625
+    so use 27.56rem (440.8px)
+
+            46.25rem comes out as 740px = 16px * 46.25 */
+}
+
+@media screen and (min-width: 741px) {
+    /* Here 46.3125rem comes out as 741px = 16px * 46.3125
+    so use 46.3rem (740.8px) */
+
+}
