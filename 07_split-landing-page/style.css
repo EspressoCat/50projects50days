@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Roboto&display=swap');
 
 :root {
     font-size: 100%;
@@ -14,11 +14,10 @@
 }
 
 * {
-    box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
@@ -26,10 +25,11 @@ body {
 }
 
 h1 {
+    font-family: 'Diphylleia', serif;
     font-size: 4rem;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 20%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -51,13 +51,15 @@ h1 {
 .split.left {
     left: 0;
     background: var(--left-surface);
-    h1 {
+}
+
+.split.left h1 {
         color: var(--left-onSurface); 
-    }
-    .btn {
-        color: var(--left-onSurface);
-        border-color: var(--left-onSurface);
-    }
+}
+
+.split.left .btn {
+    color: var(--left-onSurface);
+    border-color: var(--left-onSurface);
 }
 
 .split.left::before {
@@ -71,13 +73,13 @@ h1 {
 .split.right {
     right: 0;
     background: var(--right-surface);
-    h1 {
-        color: var(--right-onSurface); 
-    }
-    .btn {
-        color: var(--right-onSurface);
-        border-color: var(--right-onSurface);
-    }
+}
+.split.right h1 {
+    color: var(--right-onSurface);
+}
+.split.right .btn {
+    color: var(--right-onSurface);
+    border-color: var(--right-onSurface);
 }
 
 .split.right::before {
@@ -93,6 +95,7 @@ h1 {
 }
 
 .btn {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -142,7 +145,7 @@ h1 {
 @media screen and (max-width: 590px) {
     h1 {
         font-size: 2rem;
-        top: 40%;
+        top: 30%;
     }
 
     .btn {
@@ -158,7 +161,7 @@ h1 {
 
     h1 {
         font-size: 2.5rem;
-        top: 37%;
+        top: 27%;
     }
 
     .btn {
@@ -172,12 +175,11 @@ h1 {
 @media screen and (min-width: 741px) and (max-width: 1000px) {
     h1 {
         font-size: 3rem;
-        top: 35%;
+        top: 25%;
     }
 
     .btn {
         padding: 1.2rem;
         width: 11rem;
     }
-
 }
