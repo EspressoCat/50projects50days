@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>09 - Sound Board</title>
+</head>
+<body>
+    <audio id="acoustic" src="https://d9olupt5igjta.cloudfront.net/samples/sample_files/361733/d6d7fe5af3a6d33d4d7cc543d1de49c9fc4961e2/mp3/_quien_ser.mp3" loop=""></audio>
+    <audio id="funky" src="https://d9olupt5igjta.cloudfront.net/samples/sample_files/8107/8057b6e5d0409b408d83159e4b801c00bde7f26d/mp3/_130_Rhythm_C_SP_01.mp3" loop=""></audio>
+    <audio id="blues" src="https://d9olupt5igjta.cloudfront.net/samples/sample_files/139327/cc885ca4eccce65150bad5bd24f41c73476e865f/mp3/_Loop_Texas_Shuffle_E_115BPM.mp3" loop=""></audio>
+    <audio id="house" src="https://d9olupt5igjta.cloudfront.net/samples/sample_files/358556/e5ecd9ce676bd0ecede8d7327d3cc62825acf92e/mp3/_Classic_House_Loop.mp3" loop=""></audio>
+    <div class="container">
+        <p>Acoustic</p>
+        <div class="circle paused">
+            <span class="circle__btn">
+                <i class="fa-solid fa-play" name="play"></i>
+                <i class="fa-solid fa-pause" name="pause"></i>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+    </div>
+    <div class="container">
+        <p>Funky</p>
+        <div class="circle paused">
+            <span class="circle__btn">
+                <i class="fa-solid fa-play" name="play"></i>
+                <i class="fa-solid fa-pause" name="pause"></i>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+    </div>
+    <div class="container">
+        <p>Blues</p>
+        <div class="circle paused">
+            <span class="circle__btn">
+                <i class="fa-solid fa-play" name="play"></i>
+                <i class="fa-solid fa-pause" name="pause"></i>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+    </div>
+    <div class="container">
+        <p>House</p>
+        <div class="circle paused">
+            <span class="circle__btn">
+                <i class="fa-solid fa-play" name="play"></i>
+                <i class="fa-solid fa-pause" name="pause"></i>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
